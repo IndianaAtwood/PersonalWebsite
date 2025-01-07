@@ -34,7 +34,6 @@ html {
 
 .header {
     position: relative;
-    display: inline-block;
 }
 
 .header img {
@@ -55,17 +54,20 @@ html {
     line-height: .01;
 }
 
-.biography {
-    position: relative;
-    display: inline-block;
+.wave {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
-    background-color: #fcdb62;
+    height: 100%;
 }
 
-.bio-text {
-    color: white;
-    margin-left: 20px;
+.biography-block {
+    position: fixed;
+    background-color: #a96564;
+    width: 100%;
+    height: 100vh;
 }
 
 body {
