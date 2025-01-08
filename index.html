@@ -15,7 +15,7 @@
         </nav>
 
         <div class="header">
-            <img src="images/portland.jpg" style="width: 100%;">
+            <img src="images/portland.jpg">
 
             <!-- SVGs generated from https://yqnn.github.io/svg-path-editor/ -->
             <svg viewBox="0 -180 1400 450" class="wave1">
@@ -24,15 +24,27 @@
                 </path>
             </svg>
 
-            <div class="text-overlay" id="floater">
+            <div class="text-overlay" id="name">
                 <h1>INDIANA</h1>
                 <h1>ATWOOD</h1>
             </div>
         </div>
 
         <div class="biography-block">
+            <div class="bio-title">
+                <h2>Welcome to my page!</h2>
+            </div>
+
             <div class="bio-text">
-                <p>This is just some sample text, I will eventually alter this.</p>
+                <h3>I am an aspiring Software Developer looking for an internship for the Summer of 2025!</h3>
+                <h3>This website was designed completely by me, and I am currently learning the ins and outs of HTML and CSS code to make it happen.</h3>
+            </div>
+
+            <div class="container">
+                <div class="flip-box">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
             </div>
 
             <svg viewBox="0 0 25 5" class="wave2">
@@ -45,6 +57,10 @@
 
             <svg viewBox="-755 71 992 75" class="blob1" id="blob1">
                 <path fill="#72b8d5" fill-opacity="1" d="M53,-52C58.8,-35,46.7,-13.6,39.7,5.9C32.8,25.4,30.9,42.8,19,54.2C7.2,65.5,-14.7,70.7,-29.7,63C-44.7,55.3,-52.8,34.6,-54.2,15.9C-55.7,-2.8,-50.5,-19.5,-40.4,-37.5C-30.3,-55.5,-15.1,-74.7,4.2,-78.1C23.6,-81.5,47.2,-69,53,-52Z"/>
+            </svg>
+
+            <svg viewBox="-1150 -100 1100 650" class="blob2" id="blob2">
+                <path fill="#72b8d5" d="M52.3,-15.5C58.1,0.9,46.5,24.5,29.5,35.7C12.4,47,-10,45.9,-24,35.2C-38,24.5,-43.5,4.3,-38.1,-11.5C-32.6,-27.4,-16.3,-38.9,3.5,-40C23.2,-41.1,46.5,-31.9,52.3,-15.5Z"/>
             </svg>
         </div>
 
@@ -71,16 +87,20 @@
         <!-- This code is borrowed from https://codepen.io/escapetomars/pen/EeLmpp (scroll feature) -->
         <script>
             function parallax() {
-                var name = document.getElementById("floater");
+                var name = document.getElementById("name");
                 var blob1 = document.getElementById("blob1");
+                var blob2 = document.getElementById("blob2");
 
                 // different scroll speeds for different components
                 var yPosName = 0 - window.pageYOffset/5;
                 var yPosBlob1 = 0 - window.pageYOffset/8;
+                var yPosBlob2 = 0 - window.pageYOffset/5;
 
                 // where the component starts scrolling from
                 name.style.top = 50 + yPosName + "%";
                 blob1.style.top = 100 + yPosBlob1 + "%";
+                blob2.style.top = 120 + yPosBlob2 + "%";
+                console.log(blob2.style.top);
             }
 
             window.addEventListener("scroll", function(){
