@@ -17,15 +17,16 @@
         <div class="header">
             <img src="images/portland.jpg" style="width: 100%;">
 
+            <!-- SVGs generated from https://yqnn.github.io/svg-path-editor/ -->
             <svg viewBox="0 -180 1400 450" class="wave1">
-                <path fill="#a96564" fill-opacity="1"
+                <path fill="#42788d" fill-opacity="1"
                       d="M0,256L40,245.3C80,235,160,213,240,186.7C320,160,400,128,480,138.7C560,149,640,203,720,213.3C800,224,880,192,960,181.3C1040,171,1120,181,1200,192C1280,203,1360,213,1400,218.7L1440,224L1440,320L0,320Z">
                 </path>
             </svg>
 
-            <div class="text-overlay">
-                <p>INDIANA</p>
-                <p>ATWOOD</p>
+            <div class="text-overlay" id="floater">
+                <h1>INDIANA</h1>
+                <h1>ATWOOD</h1>
             </div>
         </div>
 
@@ -41,6 +42,10 @@
                          L25,4 L0,4Z">
                 </path>
             </svg>
+
+            <svg viewBox="-755 71 992 75" class="blob1" id="blob1">
+                <path fill="#72b8d5" fill-opacity="1" d="M53,-52C58.8,-35,46.7,-13.6,39.7,5.9C32.8,25.4,30.9,42.8,19,54.2C7.2,65.5,-14.7,70.7,-29.7,63C-44.7,55.3,-52.8,34.6,-54.2,15.9C-55.7,-2.8,-50.5,-19.5,-40.4,-37.5C-30.3,-55.5,-15.1,-74.7,4.2,-78.1C23.6,-81.5,47.2,-69,53,-52Z"/>
+            </svg>
         </div>
 
         <div class="something-block">
@@ -49,7 +54,7 @@
             </div>
 
             <svg viewBox="0 1 19 3" class="wave3">
-                <path fill="#ea9c65" fill-opacity="1"
+                <path fill="#93b9c9" fill-opacity="1"
                       d="M0,1
                          C0,1 1,2 2,2 C3,2 4,1 5,1 C6,1 7,2 8,2 C9,2 11,0 13,0 C15,0 16,2 19,2
                          L19,4 L0,4">
@@ -62,5 +67,25 @@
                 <p>Again, this is just sample text.</p>
             </div>
         </div>
+
+        <!-- This code is borrowed from https://codepen.io/escapetomars/pen/EeLmpp (scroll feature) -->
+        <script>
+            function parallax() {
+                var name = document.getElementById("floater");
+                var blob1 = document.getElementById("blob1");
+
+                // different scroll speeds for different components
+                var yPosName = 0 - window.pageYOffset/5;
+                var yPosBlob1 = 0 - window.pageYOffset/8;
+
+                // where the component starts scrolling from
+                name.style.top = 50 + yPosName + "%";
+                blob1.style.top = 100 + yPosBlob1 + "%";
+            }
+
+            window.addEventListener("scroll", function(){
+                parallax();
+            });
+        </script>
     </body>
 </html>
