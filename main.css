@@ -171,6 +171,7 @@ body {
     margin: 0 auto;
     max-width: 100%;
     height: 3000px;
+    overflow-x: hidden;
 }
 
 /* Code for flip feature on LinkedIn object from https://www.youtube.com/watch?v=NCLdf661ILE */
