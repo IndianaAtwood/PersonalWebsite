@@ -10,14 +10,25 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <nav class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-        </nav>
+        <!-- Nav Bar from https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+        <header>
+            <img class="logo">
+
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button>CONTACT</button></a>
+        </header>
 
         <div class="header">
+            <svg viewBox="0 120 1440 136" class="wave0">
+                <path fill="#42788d" fill-opacity="1" d="M 0 256 L 40 245.3 C 80 235 160 213 240 186.7 C 320 160 400 128 480 138.7 C 560 149 640 203 720 213.3 C 800 224 880 192 960 181.3 C 1040 171 1120 181 1200 192 C 1280 203 1360 213 1400 218.7 L 1440 224 L 1440 135 L 0 135 Z">
+                </path>
+            </svg>
+
             <img src="images/portland.jpg">
 
             <!-- SVGs generated from https://yqnn.github.io/svg-path-editor/ -->
@@ -34,29 +45,28 @@
         </div>
 
         <div class="biography-block">
-            <div class="bio-title">
-                <h2>Welcome to my page!</h2>
+            <div class="bio-container">
+                <div class="bio-text">
+                    <h2>I'm an aspiring Software Developer looking for a Summer 2025 internship!</h2>
+                </div>
+
+                <img src="images/texture.png" style="border-radius: 100%;" border="5px;">
             </div>
 
-            <div class="bio-text">
-                <h3>I am an aspiring Software Developer looking for an internship for the Summer of 2025!</h3>
-                <h3>This website was designed completely by me, and I am currently learning the ins and outs of HTML and CSS code to make it happen.</h3>
-            </div>
-
-            <svg viewBox="0 0 25 5" class="wave2">
-                <path fill="#72b8d5" fill-opacity="1"
-                      d="M0,0
-                         C1.3333,0.3333 2,1 4,1 C7,1 9,-1 12,-1 C14,-1 17,1 25,1
-                         L25,4 L0,4Z">
-                </path>
-            </svg>
-
-            <svg viewBox="-755 71 992 75" class="blob1" id="blob1">
+            <svg viewBox="-755 40 992 150" class="blob1" id="blob1">
                 <path fill="#72b8d5" fill-opacity="1" d="M53,-52C58.8,-35,46.7,-13.6,39.7,5.9C32.8,25.4,30.9,42.8,19,54.2C7.2,65.5,-14.7,70.7,-29.7,63C-44.7,55.3,-52.8,34.6,-54.2,15.9C-55.7,-2.8,-50.5,-19.5,-40.4,-37.5C-30.3,-55.5,-15.1,-74.7,4.2,-78.1C23.6,-81.5,47.2,-69,53,-52Z"/>
             </svg>
 
-            <svg viewBox="-1150 -100 1100 650" class="blob2" id="blob2">
+            <svg viewBox="-1020 -100 1100 550" class="blob2" id="blob2">
                 <path fill="#72b8d5" d="M52.3,-15.5C58.1,0.9,46.5,24.5,29.5,35.7C12.4,47,-10,45.9,-24,35.2C-38,24.5,-43.5,4.3,-38.1,-11.5C-32.6,-27.4,-16.3,-38.9,3.5,-40C23.2,-41.1,46.5,-31.9,52.3,-15.5Z"/>
+            </svg>
+
+            <svg viewBox="0 -1 25 2" class="wave2">
+                <path fill="#72b8d5" fill-opacity="1"
+                      d="M0,0
+                         C1.3333,0.3333 2,1 4,1 C7,1 9,-1 12,-1 C14,-1 17,1 25,1
+                         L25,2 L0,2Z">
+                </path>
             </svg>
         </div>
 

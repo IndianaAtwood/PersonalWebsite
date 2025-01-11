@@ -1,15 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+li, a, button {
+    font-family: "Oswald", serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #42788d;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #000;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(42, 76, 89,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(182, 214, 227,0.8);
+}
+
 h1 {
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 100px; font-style: normal; font-variant: normal; font-weight: 700;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 8vw; font-style: normal; font-variant: normal; font-weight: 700;
 }
 
 h2 {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size:50px; font-style: normal; font-variant: normal; line-height: 15.4px;}
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 4.5vw; font-style: normal; font-variant: normal;}
 }
 
 h3 {
@@ -26,34 +80,6 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #6193c9;
-    color: white;
-}
-
 .header {
     position: relative;
     overflow: hidden; /* Prevents visual overflow */
@@ -68,12 +94,20 @@ html {
 .text-overlay {
     position: absolute;
     top: 50%;
-    left: 240px;
+    left: 20vw;
     transform: translate(-50%, -8%);
     color: white;
     text-align: left;
     line-height: 1;
     letter-spacing: 8px;
+}
+
+.wave0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -40.1%;
+    left: 0;
 }
 
 .wave1 {
@@ -87,9 +121,9 @@ html {
 }
 
 .wave2 {
-    display: block;
-    position: absolute;
-    top: 280px;
+    display: inline-block;
+    position: relative;
+    top: 7px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -109,7 +143,7 @@ html {
 .blob1 {
     position: absolute;
     bottom: -100%;
-    left: 0;
+    right: -5vw;
     width: 100%;
     height: 100%;
 }
@@ -117,30 +151,39 @@ html {
 .blob2 {
     position: absolute;
     bottom: -120%;
-    left: 0;
+    right: -6vw;
     width: 100%;
     height: 100%;
 }
 
 .biography-block {
     position: relative;
-    background-color: #42788d;
+    display: inline-block;
+    background: linear-gradient(to bottom, #42788d, #3c6570);
     width: 100%;
-    height: 500px;
 }
 
-.bio-title {
-    position: relative;
-    left: 40px;
-    color: white;
+.bio-container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .bio-text {
+    display: inline-block;
     position: relative;
-    left: 140px;
-    top: 8%;
-    font-size: 13px;
-    font-weight: 400;
+    left: 4vw;
+    width: 60%;
+    transform: translateY(-40%);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+}
+
+.bio-container img {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    border-color: white;
 }
 
 .something-block {
@@ -168,7 +211,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 auto;
     max-width: 100%;
     height: 3000px;
     overflow-x: hidden;
@@ -180,8 +222,8 @@ body {
     width: 100px;
     height: 100px;
     perspective: 500px;
-    left: 90%;
-    top: 82%;
+    right: 2%;
+    bottom: 20px;
 }
 
 .LinkedIn:hover > .flip-box1 {
@@ -225,8 +267,8 @@ body {
     width: 100px;
     height: 100px;
     perspective: 500px;
-    left: 90%;
-    top: 64%;
+    right: 2%;
+    bottom: 140px;
 }
 
 .Handshake:hover > .flip-box2 {
