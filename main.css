@@ -102,14 +102,6 @@ html {
     letter-spacing: 8px;
 }
 
-.wave0 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -40.1%;
-    left: 0;
-}
-
 .wave1 {
     display: block;
     position: absolute;
