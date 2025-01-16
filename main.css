@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li, a, button {
     font-family: "Oswald", serif;
     font-weight: 600;
@@ -100,6 +104,7 @@ html {
     text-align: left;
     line-height: 1;
     letter-spacing: 8px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
 }
 
 .wave1 {
@@ -113,9 +118,9 @@ html {
 }
 
 .wave2 {
-    display: inline-block;
+    display: block;
     position: relative;
-    top: 7px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -125,7 +130,7 @@ html {
 .wave3 {
     display: block;
     position: absolute;
-    top: 250px;
+    top: 10px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -158,7 +163,6 @@ html {
 .bio-container {
     display: inline-block;
     width: 100%;
-    height: 100%;
 }
 
 .bio-text {
@@ -178,8 +182,9 @@ html {
     border-color: white;
 }
 
-.something-block {
+.projects-block {
     position: relative;
+    display: inline-block;
     background-color: #72b8d5;
     width: 100%;
     height: 500px;
@@ -187,12 +192,13 @@ html {
 
 .something-block2 {
     position: relative;
+    display: inline-block;
     background-color: #93b9c9;
     width: 100%;
     height: 500px;
 }
 
-.bio-text, .something-text, .something-text2 {
+.bio-text, .projects-text, .something-text2 {
     color: white;
 }
 
@@ -204,8 +210,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     max-width: 100%;
-    height: 3000px;
+    height: 1000px;
     overflow-x: hidden;
+    display: inline-block;
 }
 
 /* Code for flip feature on LinkedIn object from https://www.youtube.com/watch?v=NCLdf661ILE */
