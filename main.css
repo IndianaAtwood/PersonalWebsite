@@ -75,7 +75,11 @@ h3 {
 }
 
 p {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-style: normal; font-size: 14px; font-variant: normal; font-weight: 600; line-height: 15.4px; align-content: center;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-style: normal; font-size: 14px; font-variant: normal; font-weight: 600; line-height: 5vh; font-size: 3vw;
+}
+
+h4 {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-style: normal; font-size: 14px; font-variant: normal; font-weight: 1000; line-height: 20px; align-content: center;
 }
 
 html {
@@ -188,7 +192,7 @@ html {
     height: auto;
 }
 
-.projects-text {
+.projects-text, .about-text {
     position: relative;
     left: 3%;
 }
@@ -261,16 +265,24 @@ html {
     opacity: 1;
 }
 
-.something-block2 {
+.about-block {
     position: relative;
     display: inline-block;
     background-color: #93b9c9;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
-.bio-text, .projects-text, .something-text2 {
+.about-desc {
+    position: relative;
     color: white;
+    width: 85%;
+    left: 5%;
+}
+
+.bio-text, .projects-text, .about-text {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 body {
